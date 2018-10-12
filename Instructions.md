@@ -8,8 +8,7 @@
 
 *Dataset has been loaded into R, converted to Date class and appropriatley subsetted. 
 + read.csv("household_power_consumption.txt",header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
-+ data <- read.table("household_power_consumption.txt", header = T, 
-+                    sep = ";", na.strings = "?")
++ data <- read.table("household_power_consumption.txt", header = T, sep = ";", na.strings = "?")
 + data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 + data <- subset(data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"))
 
